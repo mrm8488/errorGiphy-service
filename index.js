@@ -11,6 +11,7 @@ app
   .use(require("helmet")())
   .use(require("compression")())
   .use(require("cors")())
+  .use(require('morgan')(isProduction ? 'combined' : 'dev'))
   .disable("x-powered-by");
 
 require("./routes.js")(app);
