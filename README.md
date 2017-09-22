@@ -1,3 +1,4 @@
+[![Known Vulnerabilities](https://snyk.io/test/github/mrm8488/errorgiphy-service/badge.svg)](https://snyk.io/test/github/mrm8488/errorgiphy-service)
 # errorGiphy-service
 # A Microservice to get a funny gif in HTTP error cases:
 ## we manage the following codes by now:
