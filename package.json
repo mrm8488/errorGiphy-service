@@ -10,13 +10,7 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "giphy",
-    "error",
-    "service",
-    "http",
-    "fun"
-  ],
+  "keywords": ["giphy", "error", "service", "http", "fun"],
   "author": "Manuel Romero <mrm8488@gmail.com>",
   "license": "ISC",
   "dependencies": {
