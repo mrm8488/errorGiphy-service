@@ -19,7 +19,7 @@ node index
 ```
 if we do not set a port to be used for the node app, the default port is 3000.
 Then we have to do a request like:
-### http://localhost:3000/:code -> return a <img src="<gif_uri>">
+### http://localhost:3000/:code -> return a "img" (HTML element) that you can embed in your response page.
 ### http://localhost:3000/ -> return OK meaning that the service is up and working!
 
 ## What is the core?
