@@ -23,7 +23,9 @@ Then we have to do a request like:
 ### http://localhost:3000/ -> return OK meaning that the service is up and working!
 
 [Live demo for status 200](https://errorgiphy-service.herokuapp.com/200)
+
 [Live demo for error 404](https://errorgiphy-service.herokuapp.com/404)
+
 [Live demo for error 500](https://errorgiphy-service.herokuapp.com/500)
 
 
