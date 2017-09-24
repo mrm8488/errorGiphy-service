@@ -5,7 +5,7 @@ const app = express();
 
 const isProduction = process.env.NODE_ENV === "production";
 
-/* MIDDLEWARE */
+/* MIDDLEWARE (stack inspired by kikobeats) */
 
 app
   .use(require("helmet")())
