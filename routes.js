@@ -4,16 +4,34 @@ const lib = require("./lib/index");
 
 module.exports = app => {
   app.get("/", (req, res) =>
-    res.status(200).send({ message: "It is working!" })
+    res.status(200).send({
+      message: "It is working!"
+    })
   );
 
-  app.get("/:code", async function(req, res) {
+  app.get("/:code", async (req, res) => {
     try {
       const URL = await lib.makeURL(req.params.code);
       const gif = await lib.execBashCommand(URL);
-      res.send(`<img src=${gif}>`);
+      return res.format({
+        html: () => res.send(`<img src=${gif}>`),
+
+        json: () =>
+          res.json({
+            success: true,
+            gifUrl: gif
+          })
+      });
     } catch (error) {
-      res.send(`${error}`);
+      return res.format({
+        html: () => res.send(`${error}`),
+
+        json: () =>
+          res.json({
+            success: false,
+            error
+          })
+      });
     }
   });
 };
