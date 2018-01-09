@@ -1,6 +1,6 @@
 "use strict";
 
-const lib = require("./lib/index");
+const { makeURL, execBashCommand } = require("./lib");
 
 module.exports = app => {
   app.get("/", (req, res) =>
@@ -11,8 +11,8 @@ module.exports = app => {
 
   app.get("/:code", async (req, res) => {
     try {
-      const URL = await lib.makeURL(req.params.code);
-      const gif = await lib.execBashCommand(URL);
+      const URL = await makeURL(req.params.code);
+      const gif = await execBashCommand(URL);
       return res.format({
         html: () => res.send(`<img src=${gif}>`),
 
