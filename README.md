@@ -31,7 +31,7 @@ Then we have to do a request like:
 
 
 ## What is the core?
-The following bash's commands (yes, I love bash):
+The following Linux bash's commands (yes, I love bash):
 
 ```sh
 curl -s https://giphy.com/search/<here_your_query>?sort=relevant | grep url | head -n 1 | tr -s " " | cut -f4 -d " " | cut -f2 -d "=" | tr -d ">"
