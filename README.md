@@ -2,6 +2,8 @@
 # errorGiphy-service
 # A Microservice based on Linux bash's commands to get a funny gif in HTTP error cases:
 ## we manage the following codes by now:
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/mrm8488/errorGiphy-service.svg)](https://greenkeeper.io/)
 - 200
 - 201
 - 204
