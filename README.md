@@ -1,6 +1,6 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/mrm8488/errorgiphy-service/badge.svg)](https://snyk.io/test/github/mrm8488/errorgiphy-service)
 # errorGiphy-service
-# A Microservice based on bash's commands to get a funny gif in HTTP error cases:
+# A Microservice based on Linux bash's commands to get a funny gif in HTTP error cases:
 ## we manage the following codes by now:
 - 200
 - 201
@@ -19,8 +19,8 @@ node index
 ```
 if we do not set a port to be used for the node app, the default port is 3000.
 Then we have to do a request like:
-### http://localhost:3000/:code -> return a "img" (HTML element) that you can embed in your response page.
-### http://localhost:3000/ -> return OK meaning that the service is up and working!
+### http://localhost:3000/:code -> returns an "img" (HTML element) that you can embed in your response page.
+### http://localhost:3000/ -> returns OK meaning that the service is up and working!
 
 [Live demo for status 200](https://errorgiphy-service.herokuapp.com/200)
 
