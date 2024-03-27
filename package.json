@@ -24,7 +24,7 @@
   "dependencies": {
     "compression": "^1.7.3",
     "cors": "^2.8.4",
-    "express": "^4.16.3",
+    "express": "^4.19.2",
     "helmet": "^3.21.1",
     "morgan": "^1.9.1",
     "snyk": "^1.316.1"
