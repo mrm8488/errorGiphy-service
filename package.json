@@ -22,11 +22,11 @@
   "author": "Manuel Romero <mrm8488@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "compression": "^1.7.3",
+    "compression": "^1.8.1",
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "helmet": "^3.21.1",
-    "morgan": "^1.9.1",
+    "morgan": "^1.10.1",
     "snyk": "^1.316.1"
   },
   "snyk": true
